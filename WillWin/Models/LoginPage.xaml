@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             mc:Ignorable="d"
+             x:Class="WillWin.Models.LoginPage"
+             Title="{Binding Title}">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="OrangeColor">#FCE000</Color>
+            <Color x:Key="LightGray">#F4F4F4</Color>
+            <Color x:Key="SuperLightGray">#FAF9F7</Color>
+            <Color x:Key="PlaceholderColor">#fffdcf</Color>
+
+            <Style x:Key="ListItemTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="TextColor" Value="DimGray" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                <StackLayout BackgroundColor="{StaticResource OrangeColor}" Padding="20">
+                    <Image Source="logotext.png" WidthRequest="200" />
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Физкульт-привет!" FontAttributes="Bold" FontSize="35" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+                <Label Text="Давай знакомиться, спортсмен" FontAttributes="Bold" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="30">
+                    <Label Text="Как тебя зовут?" Style="{StaticResource Key=ListItemTextStyle}" />
+                    <Entry x:Name="nameField" BackgroundColor="{StaticResource PlaceholderColor}" WidthRequest="100"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="30">
+                    <Label Text="Сколько тебе лет?" Style="{StaticResource Key=ListItemTextStyle}" />
+                    <Entry x:Name="ageField" BackgroundColor="{StaticResource PlaceholderColor}" WidthRequest="100"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="30">
+                    <Label Text="Какой у тебя вес?" Style="{StaticResource Key=ListItemTextStyle}" />
+                    <Entry x:Name="weightField" BackgroundColor="{StaticResource PlaceholderColor}" WidthRequest="100"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="30">
+                    <Label Text="Какой у тебя рост?" Style="{StaticResource Key=ListItemTextStyle}" />
+                    <Entry x:Name="heightField" BackgroundColor="{StaticResource PlaceholderColor}" WidthRequest="100"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="30">
+                    <StackLayout>
+                        <Label Text="Какого ты пола?" Style="{StaticResource Key=ListItemTextStyle}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Мужского" />
+                            <RadioButton GroupName="gender" IsChecked="True" CheckedChanged="rbMale"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Женского" />
+                            <RadioButton GroupName="gender" CheckedChanged="rbFemale"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="30">
+                    <StackLayout>
+                        <Label Text="Какая у тебя цель?" Style="{StaticResource Key=ListItemTextStyle}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Набор мышечной массы" />
+                            <RadioButton GroupName="aim" IsChecked="True" CheckedChanged="rbMuscles"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Поддержание текущего веса" />
+                            <RadioButton GroupName="aim" CheckedChanged="rbMaintaining"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Похудение" />
+                            <RadioButton GroupName="aim" CheckedChanged="rbLoss"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <yummy:PancakeView BackgroundColor="{StaticResource OrangeColor}" CornerRadius="0, 15, 15, 0" Padding="5" Margin="20, 10, 20, 0" HorizontalOptions="FillAndExpand">
+                <Button BackgroundColor="Transparent" BorderWidth="0" Text="Далее" FontAttributes="Bold" FontSize="15" Clicked="registrationEnd" />
+            </yummy:PancakeView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

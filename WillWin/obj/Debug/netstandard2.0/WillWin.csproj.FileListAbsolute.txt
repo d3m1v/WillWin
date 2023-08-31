@@ -1,0 +1,16 @@
+D:\Languages_Only\Works\WillWin\WillWin\bin\Debug\netstandard2.0\WillWin.deps.json
+D:\Languages_Only\Works\WillWin\WillWin\bin\Debug\netstandard2.0\WillWin.dll
+D:\Languages_Only\Works\WillWin\WillWin\bin\Debug\netstandard2.0\ref\WillWin.dll
+D:\Languages_Only\Works\WillWin\WillWin\bin\Debug\netstandard2.0\WillWin.pdb
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\WillWin.csproj.AssemblyReference.cache
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\WillWin.GeneratedMSBuildEditorConfig.editorconfig
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\Models\LoginPage.xaml.g.cs
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\WillWin.AssemblyInfoInputs.cache
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\WillWin.AssemblyInfo.cs
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\WillWin.csproj.CoreCompileInputs.cache
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\WillWin.dll
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\refint\WillWin.dll
+D:\Languages_Only\Works\WillWin\WillWin\obj\Debug\netstandard2.0\WillWin.pdb
