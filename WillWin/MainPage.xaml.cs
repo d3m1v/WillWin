@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using WillWin.Models;
 
 namespace WillWin
 {
@@ -16,6 +17,16 @@ namespace WillWin
         public MainPage()
         {
             InitializeComponent();
+
+            if (!App.Current.Properties.TryGetValue("userName", out object name))
+                firstLogin();
+
+
+        }
+
+        async void firstLogin()
+        {
+            await Navigation.PushModalAsync(new LoginPage());
         }
     }
 }

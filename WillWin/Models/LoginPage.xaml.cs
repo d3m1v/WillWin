@@ -157,18 +157,14 @@ namespace WillWin.Models
             }
             string weightInput = weightField.Text.Trim();
 
-            // занесение данных о пользователе в базу данных
-            LoginViewModel item = new LoginViewModel
-            {
-                Name = nameInput,
-                Age = ageInput,
-                Height = heightInput,
-                Weight = weightInput,
-                Gender = genderInput,
-                Aim = aimInput,
-            };
-            App.Db.SaveItem(item);
-            await Navigation.PushAsync(new MainPage());
+            App.Current.Properties["userName"] = nameInput;
+            App.Current.Properties["userAge"] = ageInput;
+            App.Current.Properties["userHeight"] = heightInput;
+            App.Current.Properties["userWeight"] = weightInput;
+            App.Current.Properties["userGender"] = genderInput;
+            App.Current.Properties["userAim"] = aimInput;
+
+            await Navigation.PopModalAsync();
         }
 
         private void rbMale(object sender, CheckedChangedEventArgs e)

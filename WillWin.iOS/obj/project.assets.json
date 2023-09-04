@@ -2245,24 +2245,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ivkas\\.nuget\\packages\\": {},
-    "D:\\Languages_Only\\S\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "D:\\languages\\Visual_Studio_SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Languages_Only\\Works\\WillWin\\WillWin.iOS\\WillWin.iOS.csproj",
+      "projectUniqueName": "D:\\languages\\Git_Projects\\WillWin\\WillWin.iOS\\WillWin.iOS.csproj",
       "projectName": "WillWin.iOS",
-      "projectPath": "D:\\Languages_Only\\Works\\WillWin\\WillWin.iOS\\WillWin.iOS.csproj",
-      "packagesPath": "C:\\Users\\ivkas\\.nuget\\packages\\",
-      "outputPath": "D:\\Languages_Only\\Works\\WillWin\\WillWin.iOS\\obj\\",
+      "projectPath": "D:\\languages\\Git_Projects\\WillWin\\WillWin.iOS\\WillWin.iOS.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\languages\\Git_Projects\\WillWin\\WillWin.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "D:\\Languages_Only\\S\\NuGetPackages"
+        "D:\\languages\\Visual_Studio_SDK\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ivkas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2276,8 +2276,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\Languages_Only\\Works\\WillWin\\WillWin\\WillWin.csproj": {
-              "projectPath": "D:\\Languages_Only\\Works\\WillWin\\WillWin\\WillWin.csproj"
+            "D:\\languages\\Git_Projects\\WillWin\\WillWin\\WillWin.csproj": {
+              "projectPath": "D:\\languages\\Git_Projects\\WillWin\\WillWin\\WillWin.csproj"
             }
           }
         }
